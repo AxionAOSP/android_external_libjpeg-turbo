@@ -288,6 +288,10 @@ cc_library {
         windows: {
             enabled: true,
         },
+        android_arm64: {
+            cflags: ["-fsplit-machine-functions"],
+            ldflags: ["-fsplit-machine-functions"],
+        },
     },
     sdk_version: "current",
     min_sdk_version: "apex_inherit",
