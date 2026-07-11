@@ -1,0 +1,12 @@
+# Android differences from upstream
+
+Android enables arithmetic encoding and decoding to preserve support for JPEG
+files that use arithmetic coding. Both macros are defined in `src/jconfig.h`
+and `src/jconfigint.h` so library users receive the matching error codes.
+
+The generated configuration headers support Android target architectures and
+host builds from one source tree. RISC-V uses the scalar implementation because
+Android does not currently compile this module with the RVV ISA extension.
+
+`src/jpeglib.h` retains Chromium's optional `MANGLE_JPEG_NAMES` integration.
+The Android modules use the standard libjpeg symbol names.

@@ -1,0 +1,14 @@
+Name: libjpeg-turbo
+URL: https://github.com/libjpeg-turbo/libjpeg-turbo/
+Version: 3.2.0
+Revision: c85e6b905bf237038faa936dab160ebfc5da0344
+License: IJG, BSD-3-Clause, Zlib
+License File: LICENSE.md
+Security Critical: yes
+Update Mechanism: Manual
+Shipped: yes
+License Android Compatible: yes
+
+Description:
+This source is the upstream libjpeg-turbo 3.2.0 release with Android build
+files, generated configuration headers, and optional Chromium symbol mangling.
